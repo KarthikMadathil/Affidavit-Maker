@@ -2,7 +2,7 @@
 
 > To Help Prepare Covid 19 Affidavit for essential travel
 
-> https://karthikmadathil.github.io/
+> https://karthikmadathil.github.io/Affidavit-Maker/
 
 ![GitHub stars](https://img.shields.io/github/stars/karthikmadathil/karthikmadathil.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/karthikmadathil/karthikmadathil.github.io)
@@ -14,7 +14,7 @@
 ### Website Preview
 
 <p align="center"> 
-  <kbd>
+  <kbd> 
     <a href="https://karthikmadathil.github.io/Affidavit-Maker/" target="_blank"><img src="ss/screenshot.png">
   </a>
   </kbd>
