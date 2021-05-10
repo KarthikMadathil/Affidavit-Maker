@@ -1,0 +1,278 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+        <title>Travel Pass Sathyavangmoolam Online Maker Kerala </title>
+        <meta name="author" content="Karthik Madathil ">
+        <meta name="description" content="This is a life easy sathyavangmoolam maker online for travel during covid in kerala."/>
+        <meta name="keywords" content="Curfew , Affidivit , Sathyavangmoolam ,Kerala, Travel Pass , Covid">
+  
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@500&display=swap" rel="stylesheet"> 
+
+        <script src="https://unpkg.com/pdf-lib@1.4.0"></script> 
+        <script src="https://unpkg.com/@pdf-lib/fontkit@0.0.4"></script>
+        <script src="https://unpkg.com/downloadjs@1.4.7"></script> 
+        <!-- ... -->
+     <style>
+        .-z-1 {
+          z-index: -1;
+        }
+      
+        .origin-0 {
+          transform-origin: 0%;
+        }
+      
+        input:focus ~ label,
+        input:not(:placeholder-shown) ~ label,
+        textarea:focus ~ label,
+        textarea:not(:placeholder-shown) ~ label,
+        select:focus ~ label,
+        select:not([value='']):valid ~ label {
+          /* @apply transform; scale-75; -translate-y-6; */
+          --tw-translate-x: 0;
+          --tw-translate-y: 0;
+          --tw-rotate: 0;
+          --tw-skew-x: 0;
+          --tw-skew-y: 0;
+          transform: translateX(var(--tw-translate-x)) translateY(var(--tw-translate-y)) rotate(var(--tw-rotate))
+            skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+          --tw-scale-x: 0.75;
+          --tw-scale-y: 0.75;
+          --tw-translate-y: -1.5rem;
+        }
+      
+        input:focus ~ label,
+        select:focus ~ label {
+          /* @apply text-black; left-0; */
+          --tw-text-opacity: 1;
+          color: rgba(0, 0, 0, var(--tw-text-opacity));
+          left: 0px;
+        }
+      </style>
+
+</head>
+<body> 
+    
+<div class="min-h-screen bg-gray-100 p-0 sm:p-12">
+    <div class="mx-auto max-w-md px-6 py-12 bg-white border-0 shadow-lg sm:rounded-3xl">
+      <h1 class="text-2xl font-bold mb-8 ">Make your Affidavit  Sathyavangmoolam / സത്യവാങ്മൂലം  </h1>
+      <!-- <h2 class="text-2xl font-medium  ">   (Sathyavangmoolam / സത്യവാങ്മൂലം )</h2> -->
+   
+      <form id="form" novalidate>
+       
+        <div class="relative z-0 w-full mb-5">
+          <input type="text" name="applyname"
+           id="applyname" placeholder=" " required class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" />
+          <label for="applyname" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter name</label>
+          <span class="text-sm text-red-600 hidden" id="error">Name is required</span>
+        </div>
+        <div class="relative z-0 w-full mb-5">
+          <input type="text" name="phone" id="phone"
+            placeholder=" " required class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" />
+          <label for="phone" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter Phone</label>
+          <span class="text-sm text-red-600 hidden" id="error">Phone is required</span>
+        </div>
+        
+
+        
+        <div class="relative z-0 w-full mb-5">
+            <textarea rows="5" name="address" id="address" placeholder=" " class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" required></textarea>
+            <label for="address" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter Address</label>
+            <span class="text-sm text-red-600 hidden" id="error">Address is required</span>
+        </div>
+
+        
+        <div class="relative z-0 w-full mb-5">
+          <input required
+            type="text"
+            name="vehicle_num"
+            placeholder=" "
+            id="vehicle_num"
+            class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+          />
+          <label for="vehicle_num" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter Vehicle Registration Number 
+          <span class="text-sm text-red-600 hidden" id="error">Vehicle Number is required</span>
+        </div>
+
+        <div class="relative z-0 w-full mb-5">
+            <select required
+              name="vehicle_type"
+              id="vehicle_type"
+              value=""
+              onclick="this.setAttribute('value', this.value);"
+              class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none z-1 focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+            >
+              <option value="" selected disabled hidden></option>
+              <option value="Car">Car</option>
+              <option value="2 Wheeler">2 Wheeler</option>
+              <option value="XUV">XUV</option> 
+            </select>
+            <label for="vehicle_type" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Select Vehicle Type</label>
+            <span class="text-sm text-red-600 hidden" id="error">Option has to be selected</span>
+          </div>  
+        <div class="relative z-0 w-full mb-5">
+            <textarea rows="2" name="purpose" id="purpose" placeholder=" " class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" required></textarea>
+            <label for="purpose" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter Purpose</label>
+            <span class="text-sm text-red-600 hidden" id="error">Purpose is required</span>
+        </div>  
+        <div class="relative z-0 w-full mb-5">
+            <input type="text" name="co_passengers" id="co_passengers" required
+
+              placeholder=" "   class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" />
+            <label for="co_passengers" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">
+              Enter Co-Passenger,( Names if any )</label>
+        </div>
+          
+
+        <p class="mt-5 mb-5 text-gray-800 font-bold ">Returning Details</p>
+        <div class="flex flex-row space-x-4">
+            <div class="relative z-0 w-full mb-5">
+              <input 
+              required
+                type="text"
+                name="return_date"
+                id="return_date"
+                placeholder=" "
+                onclick="this.setAttribute('type', 'date');"
+                class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              />
+              <label for="return_date" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Date</label>
+              <span class="text-sm text-red-600 hidden" id="error">Date is required</span>
+            </div>
+            <div class="relative z-0 w-full">
+              <input
+              required
+                type="text"
+                id="return_time"
+                name="return_time"
+                placeholder=" "
+                onclick="this.setAttribute('type', 'time');"
+                class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200"
+              />
+              <label for="return_time" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Time</label>
+              <span class="text-sm text-red-600 hidden" id="error">Time is required</span>
+            </div>
+          </div>
+          <div class="relative z-0 w-full mb-5">
+            <input type="text" name="place" id="place"
+              placeholder=" " required class="pt-3 pb-2 block w-full px-0 mt-0 bg-transparent border-0 border-b-2 appearance-none focus:outline-none focus:ring-0 focus:border-black border-gray-200" />
+            <label for="place" class="absolute duration-300 top-3 -z-1 origin-0 text-gray-500">Enter Your Current Place</label>
+            <span class="text-sm text-red-600 hidden" id="error">Place is required</span>
+          </div>
+
+        <button
+          id="button" 
+          onclick="MakeAffidavit()"
+          type="button"
+          class="w-full px-6 py-3 mt-3 text-lg text-white transition-all duration-150 ease-linear rounded-lg shadow outline-none bg-purple-500 hover:bg-purple-600 hover:shadow-lg focus:outline-none"
+        >
+          Make
+        </button>
+      </form>
+      <div id="alert_msg" class=" hidden alert flex flex-row items-center bg-green-200 p-5 rounded border-b-2 border-green-300">
+        <div class="alert-icon flex items-center bg-green-100 border-2 border-green-500 justify-center h-10 w-10 flex-shrink-0 rounded-full">
+          <span class="text-green-500">
+            <svg fill="currentColor"
+               viewBox="0 0 20 20"
+               class="h-6 w-6">
+              <path fill-rule="evenodd"
+                  d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  clip-rule="evenodd"></path>
+            </svg>
+          </span>
+        </div>
+        <div class="alert-content ml-4">
+          <div class="alert-title font-semibold text-lg text-green-800">
+             Successful! 
+          </div>
+          <div class="alert-description text-sm text-green-600">
+           Your affidavit 📋 is Prepared & Download it ! .  
+          </div>
+        </div>
+      </div>
+  
+      <div class="container mx-auto px-6">
+        <div class="mt-16 border-t-2 border-gray-300 flex flex-col items-center">
+            <div class="sm:w-2/3 text-center py-6">
+                <p class="text-xs text-purple-700 font-bold mb-2">
+                    Made with ❤️  
+                    by 
+                    <!-- <a href="https://karthikmadathil.github.io/">   -->
+                    <a href="https://www.verbalcodes.com/">  
+                       Karthik Madathil
+                   </a>
+                </p>
+            </div>
+        </div>
+    </div>
+    </div>
+  </div>
+  
+  
+    <script type="text/javascript"> 
+ 
+    const { degrees, PDFDocument, rgb, StandardFonts  } = PDFLib 
+
+    async function MakeAffidavit() {    
+
+      date =new Date();
+      // Fetch an existing PDF document
+      const url = '/affidavit.pdf'
+  		const existingPdfBytes = await fetch(url).then(res => res.arrayBuffer())
+
+      // Load a PDFDocument from the existing PDF bytes
+      const pdfDoc = await PDFDocument.load(existingPdfBytes)
+      
+      pdfDoc.registerFontkit(fontkit)
+
+      const fontBytes = await fetch('/BalooChettan2-SemiBold.ttf').then((res) => res.arrayBuffer())
+      // const fontBytes = await fetch('NotoSansMalayalam-Regular.ttf').then((res) => res.arrayBuffer())
+      // Embed the Helvetica font
+      
+      const helveticaFont = await pdfDoc.embedFont(StandardFonts.Helvetica)
+        // Embed our custom font in the document
+       
+      const customFont = await pdfDoc.embedFont(fontBytes)
+
+      // Get the first page of the document
+      const pages = pdfDoc.getPages()
+      const firstPage = pages[0]
+
+      // Get the width and height of the first page
+      const { width, height } = firstPage.getSize()
+      console.log("ht:"+height); 
+      console.log("wd:"+width); 
+    firstPage.setFont(customFont)  
+
+    firstPage.drawText( String(document.getElementById("vehicle_num").value) , { x:75, y: 630, size: 15 })
+    firstPage.drawText( String(document.getElementById("vehicle_type").value) , { x:480, y: 630, size: 15 })
+    firstPage.drawText( String(document.getElementById("applyname").value) , { x:145, y: 590, size: 15 })
+    firstPage.drawText(String(document.getElementById("address").value), { x: 70, y: 553, size: 14, width: 250 , lineHeight:40 }) 
+    firstPage.drawText(String(document.getElementById("purpose").value), { x: 70, y: 475, size: 14,width: 500,lineHeight:40  })
+    firstPage.drawText(String(document.getElementById("co_passengers").value), { x: 200, y: 395, size: 14 })
+    firstPage.drawText(String(document.getElementById("return_date").value), { x: 93, y: 318, size: 14 })
+    firstPage.drawText(String(document.getElementById("return_time").value), { x: 182, y: 318, size: 14 })
+    firstPage.drawText( String(document.getElementById("applyname").value) , { x:450, y: 220, size: 14 })
+    firstPage.drawText(String(document.getElementById("phone").value), { x: 450, y: 185, size: 14 })
+    firstPage.drawText(String(date.toLocaleDateString()), { x: 105, y: 163, size: 14 })
+    firstPage.drawText(String(date.toLocaleTimeString()), { x: 105, y: 135, size: 14 })
+    firstPage.drawText(String(document.getElementById("place").value), { x: 105, y: 110, size: 14 })
+ 
+      // Serialize the PDFDocument to bytes (a Uint8Array)
+      const pdfBytes = await pdfDoc.save()
+
+			// Trigger the browser to download the PDF document
+            // renderInIframe(pdfBytes);
+      download(pdfBytes, "Affidivit.pdf", "application/pdf");
+            document.getElementById('form').classList.toggle('hidden');
+      document.getElementById('alert_msg').classList.toggle('hidden');
+    } 
+ 
+</script> 
+ 
+ 
+</body>
+</html>
