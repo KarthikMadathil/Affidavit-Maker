@@ -15,7 +15,7 @@
 
 <p align="center"> 
   <kbd>
-    <a href="https://karthikmadathil.github.io/" target="_blank"><img src="ss/preview.gif">
+    <a href="https://karthikmadathil.github.io/Affidavit-Maker/" target="_blank"><img src="ss/screenshot.png">
   </a>
   </kbd>
 </p>
@@ -26,7 +26,7 @@
 
 - Clone the repository and open <b>index.html</b>.
 
-To view a live example, **[click here](https://karthikmadathil.github.io/)**
+To view a live example, **[click here](https://karthikmadathil.github.io/Affidavit-Maker/)**
 
 ## Contributing 💡
 
