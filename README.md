@@ -2,7 +2,7 @@
 
 > To Help Prepare Covid 19 Affidavit for essential travel
 
-> https://karthikmadathil.github.io/
+> https://karthikmadathil.github.io/Affidavit-Maker/
 
 ![GitHub stars](https://img.shields.io/github/stars/karthikmadathil/karthikmadathil.github.io)
 ![GitHub forks](https://img.shields.io/github/forks/karthikmadathil/karthikmadathil.github.io)
@@ -15,7 +15,7 @@
 
 <p align="center"> 
   <kbd>
-    <a href="https://karthikmadathil.github.io/" target="_blank"><img src="ss/preview.gif">
+    <a href="https://karthikmadathil.github.io/Affidavit-Maker/" target="_blank"><img src="Screenshot_2021-05-10 Travel Pass Sathyavangmoolam Online Maker Kerala.png">
   </a>
   </kbd>
 </p>
